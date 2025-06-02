@@ -1,0 +1,170 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Acasă - Prezentare Electronică</title>
+    <style>
+        /* Reset simplu */
+        * {
+            margin: 0; padding: 0; box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Fundal albastru gradient gaming */
+            background: linear-gradient(90deg, #0077cc, #005fa3);
+            color: #e0f7e9; /* verde deschis, lizibil */
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #003b70, #004d99);
+            padding: 25px 20px;
+            text-align: center;
+            color: #ffffff; /* Text alb în header */
+            box-shadow: 0 3px 10px rgba(0, 255, 153, 0.5);
+            margin-bottom: 40px;
+            border-radius: 8px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff; /* Linkuri nav alb */
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 14px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #00ff99;
+            color: #003b70;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .content {
+            flex: 1 1 500px;
+            font-size: 1.2rem;
+            color: #ccf5d9;
+        }
+
+        .content h2 {
+            color: #00ff99;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .content p {
+            margin-bottom: 18px;
+        }
+
+        .gallery {
+            flex: 1 1 400px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            border-radius: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,255,153,0.5);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,255,153,0.8);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #00ff99aa;
+            font-size: 0.9rem;
+        }
+
+        @media(max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr 1fr;
+                width: 100%;
+            }
+        }
+
+        @media(max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Electronica - Tehnologia Viitorului</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html" aria-current="page">Acasă</a></li>
+            <li><a href="despre.html">Despre</a></li>
+            <li><a href="resurse.html">Resurse</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="content">
+        <h2>Ce este Electronica?</h2>
+        <p>Electronica este ramura tehnicii care se ocupă cu studiul și aplicarea fenomenelor electrice și electromagnetice, în special în domeniul componentelor, circuitelor și dispozitivelor electronice. De la smartphone-uri și computere, până la roboți și sisteme automate, electronica este peste tot în jurul nostru.</p>
+        <p>Exemple de aplicații includ circuite integrate, microcontrolere, senzori, dispozitive de comunicare wireless și sisteme de control pentru automatizări industriale și casnice.</p>
+        <p>De asemenea, electronica joacă un rol esențial în dezvoltarea tehnologiilor de gaming, realitate virtuală și inteligență artificială.</p>
+    </section>
+
+    <section class="gallery">
+        <img src="electronica1.jpg" alt="Circuit electronic" />
+        <img src="electronica2.jpg" alt="Placă de bază" />
+        <img src="electronica3.jpg" alt="Microcip" />
+        <img src="electronica4.jpg" alt="Robot cu plăci electronice" />
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Electronica. Toate drepturile rezervate.</p>
+</footer>
+
+</body>
+</html>
+
